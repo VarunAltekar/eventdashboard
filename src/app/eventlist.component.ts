@@ -15,6 +15,6 @@ import { Component, NgModule } from "@angular/core";
 export class EventListComponent{
     event={
         id:1,
-        name:'Varun'
+        name:'VarunA'
     }
 }
