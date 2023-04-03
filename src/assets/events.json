@@ -1,0 +1,38 @@
+{
+    "id": "1",
+    "name": "Angular Connect",
+    "date": "06/04/23",
+    "time": "10:00",
+    "price": "599.99",
+    "imageUrl": "/app/assets/images/ng-n1.png",
+    "onlineUrl": "http://www.ng.org",
+    "session":[
+        {
+            "id":"1",
+            "name":"Angular 4 Pipes",
+            "presenter": "Peter Bacon Darwin",
+            "duration": "1",
+            "level": "Intermediate",
+            "abstract": "",
+            "voters": ["brad green","igor minar","martin fowler"]
+        },
+        {
+            "id":"2",
+            "name":"Getting most out of your dev team",
+            "presenter": "Jeff Cross",
+            "duration": "1",
+            "level": "Intermediate",
+            "abstract": "",
+            "voters": ["john papa","brad green","igor minar","martin fowler"]            
+        },
+        {
+            "id":"3",
+            "name":"Angular 4 Performance Metrices",
+            "presenter": "Rob Walnald",
+            "duration": "2",
+            "level": "Advance",
+            "abstract": "",
+            "voters": []        
+        }
+    ]
+}

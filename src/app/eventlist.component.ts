@@ -13,7 +13,7 @@ import { Component, NgModule } from "@angular/core";
     templateUrl: 'eventlist.html'            
 })
 export class EventListComponent{
-    event={
+    eventList={
         id:1,
         name:'VarunA'
     }

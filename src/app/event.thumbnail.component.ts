@@ -5,5 +5,5 @@ import { Component, Input } from "@angular/core";
     templateUrl: 'eventthumbnail.html'
 })
 export class EventThumbnail{
- @Input() event:any;
+ @Input() eventThumbnail:any;
 }
