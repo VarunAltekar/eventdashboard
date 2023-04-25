@@ -1,4 +1,7 @@
-import { Component, NgModule } from "@angular/core";
+import { Component, NgModule, OnInit } from "@angular/core";
+
+import { EventModel } from "./model/event.model";
+import { EventService } from "./service/event.service";
 
 @Component({
     selector: 'event-list',
@@ -12,9 +15,28 @@ import { Component, NgModule } from "@angular/core";
     */
     templateUrl: 'eventlist.html'            
 })
+
+
 export class EventListComponent{
-    eventList={
-        id:1,
-        name:'VarunA'
+    
+    eventList!: EventModel;
+    flag = false;
+    
+    constructor(private service:EventService){}
+    
+    getEventData(){
+        this.service.getEvents_v1().
+            subscribe({next: (value: any) => {
+                
+                this.eventList = {
+                    id: value['id'],
+                    name: value['name'],
+                    date: value['date'],
+                    time: value['time'],
+                    price: value['price'],
+                    imageUrl: value['imageUrl'],
+                } 
+                this.flag = true;                
+            }})
     }
 }

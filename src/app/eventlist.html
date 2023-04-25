@@ -2,6 +2,12 @@
     <!-- <h1>Event List</h1> 
     <h3>{{event.id}}</h3>
     <h3>{{event.name}}</h3> -->
-    <event-thumbnail [eventThumbnail]="eventList"></event-thumbnail>
+
+    <!-- event binding (click) -->
+     <button (click)="getEventData()">Get Event Data</button>
+
     
+    <div *ngIf="flag">
+        <event-thumbnail [eventThumbnail]="eventList"></event-thumbnail>
+    </div>
 </div>
